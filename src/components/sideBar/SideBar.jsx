@@ -39,6 +39,8 @@ function SideBar({ sidebar, category, setCategory }) {
           <img src={game} alt="" />
           <p>Gaming</p>
         </div>
+        <hr />
+        <h3>Explore</h3>
         <div
           className={`side-link ${category === 22 ? "active" : ""}`}
           onClick={() => setCategory(22)}
@@ -95,15 +97,15 @@ function SideBar({ sidebar, category, setCategory }) {
         </div>
         <div className="side-link">
           <img src={tom} alt="" />
-          <p>kriti</p>
+          <p>tom-jan</p>
         </div>
         <div className="side-link">
           <img src={megan} alt="" />
-          <p>kriti</p>
+          <p>helena</p>
         </div>
         <div className="side-link">
           <img src={cameron} alt="" />
-          <p>kriti</p>
+          <p>jussica</p>
         </div>
       </div>
     </div>

@@ -1,11 +1,13 @@
 import "./NavBar.css";
 import menuImage from "../../assets/menu.png";
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
 import search from "../../assets/search.png";
 import upload from "../../assets/upload.png";
 import more from "../../assets/more.png";
 import notification from "../../assets/notification.png";
 import Profile from "../../assets/ajjj.png";
+import { Link } from "react-router-dom";
+import { logo } from "../../data";
 
 function NavBar({ setSidebar }) {
   return (
@@ -17,7 +19,9 @@ function NavBar({ setSidebar }) {
           src={menuImage}
           alt=""
         />
-        <img className="logo" src={logo} alt="" />
+        <Link to="/">
+          <img className="logo" src={logo} alt="" />
+        </Link>
       </div>
 
       <div className="nav-middle flex--div">

@@ -7,8 +7,15 @@ nav {
   top: 0;
   z-index: 10;
 }
+.logo {
+  margin-left: 10px;
+  width: 25%;
+}
+.menu-icon {
+  width: 30px;
+}
 .menu-icon .nav-left {
-  width: 22px;
+  width: 30px;
   margin-right: 25px;
 }
 .nav-left .logo {
@@ -37,4 +44,25 @@ nav {
 .nav-right .user-icon {
   width: 35px;
   border-radius: 50%;
+}
+
+/******************************************************/
+
+@media (max-width: 900px) {
+  .menu-icon {
+    display: none;
+  }
+  .nav-right img {
+    display: none;
+  }
+  .nav-right .user-icon {
+    display: block;
+    width: 30px;
+  }
+  .logo {
+    width: 60px;
+  }
+  .nav-middle .search-box input {
+    width: 100px;
+  }
 }

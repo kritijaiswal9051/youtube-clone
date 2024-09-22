@@ -2,6 +2,7 @@ import { useState } from "react";
 import Feed from "../../components/feed/Feed";
 import SideBar from "../../components/sideBar/SideBar";
 import "./Home.css";
+import ListStyle from "../../components/listStyle/ListStyle";
 
 function Home({ sidebar }) {
   const [category, setCategory] = useState(0);
@@ -12,6 +13,7 @@ function Home({ sidebar }) {
         category={category}
         setCategory={setCategory}
       />
+      <ListStyle />
       <div className={`container ${sidebar ? "" : "large-container"}`}>
         <Feed category={category} />
       </div>

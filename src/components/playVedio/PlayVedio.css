@@ -1,8 +1,9 @@
 .play-vedio {
   flex-basis: 69%;
 }
-.play-vedio video {
+.play-vedio iframe {
   width: 100%;
+  height: 37vw;
 }
 .play-vedio h3 {
   margin-top: 10px;
@@ -115,4 +116,22 @@
 .comment-action span {
   color: #5a5a5a;
   margin: 20px;
+}
+
+/******************************************************/
+
+@media (max-width: 900px) {
+  .play-vedio {
+    flex-basis: 100%;
+  }
+  .play-vedio iframe {
+    width: 100%;
+    height: 50vw;
+  }
+  .video-discription {
+    padding-left: 0;
+  }
+  .play-vedio .play-video-info span {
+    margin: 15px 15px 0 0;
+  }
 }
